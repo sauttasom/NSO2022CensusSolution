@@ -1,0 +1,23 @@
+﻿
+
+dotnet user-secrets init
+
+
+
+
+-- UAT
+dotnet user-secrets set ConnectionStrings:Agrc66 "Data Source=192.168.0.107;Initial Catalog=Agrc66;Persist Security Info=True;User ID=agrc66;Password=dBAgrC66@1818;Max Pool Size=400;Connect Timeout=60;TrustServerCertificate=True;"
+
+
+//prd
+dotnet user-secrets set ConnectionStrings:Agrc66 "Data Source=209.15.99.68;Initial Catalog=Agrc66;Persist Security Info=True;User ID=agrc66;Password=dBAgrC66@1818;Max Pool Size=400;Connect Timeout=60;TrustServerCertificate=True;" 
+
+---Generate Model----
+dotnet ef dbcontext scaffold Name=ConnectionStrings:Agrc66 Microsoft.EntityFrameworkCore.SqlServer -o Models -t Users -t EducationLevel  -t EnumerateRegister -t BankNameMaster -t Users -t Role -t Position -t MapUserControl -f
+
+
+Step Deploy PRD for RegisE :
+1 เปลี่ยน config in Appsetting : Connecttion Database , Domain for Validate Token to "https://agcensus.nso.go.th"
+2 run command dotnet user-secrets set ConnectionStrings:Agrc66 ให้ชี้ไปที่ ip 202.139
+3 ตอน Pubilsh ให้เลือก profile ของ PRD 
+4 conpy File หลังจาก Pubilsh ไปวางบน Server

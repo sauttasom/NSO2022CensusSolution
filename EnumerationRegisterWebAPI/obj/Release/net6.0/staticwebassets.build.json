@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "e/XSsCbGS6hm2rhcAyjRBVNdC39RPyKr6FcXzQUdP6s=",
+  "Source": "EnumerationRegisterWebAPI",
+  "BasePath": "_content/EnumerationRegisterWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

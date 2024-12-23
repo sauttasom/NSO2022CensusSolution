@@ -1,0 +1,36 @@
+export interface TrackingInfo {
+  TRACKING_KEY: number;
+  AREA_CODE_FROM: string;
+  CWT_FROM: string;
+  CWTN_FROM: string;
+  AMP_FROM: string;
+  AMPN_FROM: string;
+  TAM_FROM: string;
+  TAMN_FROM: string;
+  TYPE_FROM: string;
+  MUN_FROM: string;
+  MUNN_FROM: string;
+  VIL_FROM: string;
+  VILN_FROM: string;
+  ADD_FROM: string;
+  AREA_CODE_TO: string;
+  CWT_TO: string;
+  CWTN_TO: string;
+  AMP_TO: string;
+  AMPN_TO: string;
+  TAM_TO: string;
+  TAMN_TO: string;
+  TYPE_TO: string;
+  MUN_TO: string;
+  MUNN_TO: string;
+  VIL_TO: string;
+  VILN_TO: string;
+  ADD_TO: string;
+  TRACK_NAME: string;
+  R31: string;
+  status1: string;
+  TYPE_TRACKING: string;
+  TRACK_DATE: string;
+  PROCESS_DATE: string;
+  SUCCESS_DATE: string;
+}
